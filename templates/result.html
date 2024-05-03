@@ -1,0 +1,25 @@
+{% extends "layout.html"%}
+{% block title %}
+Prediction - Hand Sign Digit Recognition
+{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+
+    <header class="text-white text-center">
+        <h1 class="display-4 text-dark">Found Fingerprint Detection</h1>
+        <p class="lead mb-5 text-dark">You will see the prediction of the input image.</p>
+    </header>
+
+    <header class="text-white text-center">
+        <h1 class="display-5">Prediction</h1>
+        {% if predictions %}
+        <h2 class="display-4 text-dark font-weight-bold">{{predictions}}</h2>
+        <p style="font-size: 24px; font-weight: bold; color: #724166;">90% 이상 일치합니다.</p>
+        {% else %}
+        <h2 class="display-4 text-dark font-weight-bold">{{err}}</h2>
+        <p style="font-size: 24px; font-weight: bold; color: #724166;">일치하지 않습니다.</p>
+        {% endif %}
+    </header>
+</div>
+{% endblock %}
