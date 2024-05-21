@@ -1,14 +1,14 @@
 {% extends "layout.html"%}
 {% block title %}
-Hand Sign Digit Recognition
+Fingerprint Recognition
 {% endblock %}
  
 {% block content %}
 <div class="container py-5">
  
     <header class="text-white text-center">
-        <h1 class="display-4">Fingerprint recognition</h1>
-        <p class="lead mb-5">나의 지문이 등록되어 있는지 확인하세요!</p>
+        <h1 class="display-4 font-weight-bold text-dark">Fingerprint recognition</h1>
+        <p class="lead mb-5 text-dark font-weight-bold">나의 지문이 등록되어 있는지 확인하세요!</p>
     </header>
  
  
@@ -29,8 +29,6 @@ Hand Sign Digit Recognition
  
  
                 <!-- Uploaded image area-->
-                <p class="font-italic text-white text-center">The image uploaded will be rendered inside the box
-                    below.</p>
                 <div class="image-area mt-4"><img alt="" class="img-fluid rounded shadow-sm mx-auto d-block"
                                                   id="imageResult" name="imageResult"
                                                   src="#"></div>
